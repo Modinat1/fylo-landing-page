@@ -1,0 +1,190 @@
+:root{
+    box-sizing: border-box;
+}
+*,
+::before,
+::after{
+    box-sizing: inherit;
+}
+body{
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1060px;
+    margin: 50px auto;
+}
+a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+}
+button{
+    background-color:  hsl(198, 60%, 50%);
+    color: white;
+    padding: 10px 40px;
+    margin-top:10px;
+    border: none;
+    border-radius: 20px;
+}
+button:hover{
+    color: lightgray;
+}
+.flex{
+    display: flex;
+    margin-right: 20px;
+}
+.flex > div{
+    flex: 1;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.nav nav {
+    display: flex;
+}
+nav {
+    display: flex;
+    justify-content: space-between
+}
+nav ul{
+    display: inline-flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: lightgray;
+}
+.intro{
+    margin: 50px 0;
+    text-align: center;
+}
+.anywhere{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    margin: 20px 0;
+}
+.anywhere .anywhere-info{
+    margin: 30px;
+}
+.productive{
+    text-align: center;
+}
+.productive-img{
+    margin-right: 40px;
+}
+.productive-text{
+    margin-top: 70px;
+}
+
+.testimonial-container{
+    margin: 50px 0 ;
+}
+.testimonial{
+    background-color: hsl(219, 30%, 18%);
+    padding: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+.testimonial .quotes{
+    position: absolute;
+    top: -30px;
+    left: -10px;
+    z-index: -1;
+}
+.testimonial-img{
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.testimonial-info{
+    display: flex;
+}
+.testimonial-info h4{
+    margin: 0;
+}
+.get-access{
+    position: relative;
+    top: 150px;
+    z-index: 1;
+    background-color: hsl(217, 28%, 15%);
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 600px;
+    
+}
+.get-access input{
+    padding: 10px 80px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+footer{
+    position: absolute;
+    background-color: hsl(216, 53%, 9%);
+    padding: 120px 100px 80px 100px;
+}
+
+footer ul li{
+    list-style: none;
+    margin: 20px;
+}
+.icon-margin{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.mobile-contact{
+   margin-left: 50px; 
+}
+.socials{
+    display: flex;
+  
+}
+.social-img{
+    width: 25px;
+    height: 25px;
+    outline: none;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px){
+body{
+    text-align: center;
+}
+.flex{
+    flex-direction: column;
+    
+}
+.testimonial-info{
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
